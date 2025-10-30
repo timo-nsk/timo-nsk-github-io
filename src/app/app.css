@@ -1,0 +1,202 @@
+:host {
+  --view-height: 100vh;
+}
+
+/** HEADER SECTION **/
+#header-section {
+  padding: 50px;
+  margin-top: 25px;
+}
+
+/** WELCOME SECTION **/
+#welcome-section {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-container {
+  width: 90%
+}
+
+/** PERSONAL INFO SECTION **/
+#personal-info-section {
+  display: flex;
+  flex-direction: column;
+  height: var(--view-height);
+  overflow: hidden;
+}
+
+#personal-info-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+#foto-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-box-container {
+  width: 50%;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 120px;
+}
+
+#info-box-container p {
+  font-size: 1.2rem;
+}
+
+/** PROJECTS SECTION **/
+.project-section {
+  display: flex;
+  gap: 30px;
+}
+
+#projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+.project-info-container {
+  width: 40%;
+}
+
+.project-screen-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/** TECH STACK SECTION **/
+#tech-stack-section {
+  margin-top: 100px;
+}
+
+#tech-stack-wrapper {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.tech-stack-container {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img {
+  max-width: 100%;   /* Bild wird nie breiter als Container */
+  height: auto;      /* Höhe passt sich proportional an */
+  display: block;    /* optional, entfernt kleine Lücken */
+}
+
+/** CONTACT SECTION **/
+#contact-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#email-container {
+margin-top: 30px;
+}
+
+#email-container a {
+  padding: 15px;
+  color: var(--old-rose);
+  border: 1px solid var(--old-rose);
+}
+
+#email-container a:hover {
+  color: white;
+  border-color: white;
+}
+
+/** OTHER **/
+.border-r {
+  border: 1px solid red;
+  padding: 1px;
+  margin: 1px;
+}
+
+.border-b {
+  border: 1px solid blue;
+  padding: 1px;
+  margin: 1px;
+}
+
+.primary-highlight {
+  color: var(--old-rose);
+}
+
+.secondary-highlight {
+  color: var(--wheat);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+hr {
+  color: var(--old-rose);
+  height: 5px;
+  background-color: var(--old-rose);
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+footer {
+  height: 200px;
+  background-color: #0b0b0b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media  (max-width: 800px) {
+  #personal-info-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-section,
+  #personal-info-wrapper {
+    flex-direction: column;
+  }
+
+  .project-info-container,
+  .project-screen-container,
+  #foto-container,
+  #info-box-container {
+    width: 100%;
+  }
+
+  .reverseable {
+    flex-direction: column-reverse;
+  }
+}
