@@ -4,13 +4,22 @@
 
 /** HEADER SECTION **/
 #header-section {
-  padding: 50px;
-  margin-top: 25px;
+  padding: 60px;
+  background-color: var(--wave-bg);
+}
+
+.wave {
+  display: block;
+  transform: scaleY(-1);
+}
+
+.wave path {
+  fill: var(--wave-bg); /* gleiche Farbe wie oben */
 }
 
 /** WELCOME SECTION **/
 #welcome-section {
-  height: 85vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +63,7 @@
 /** PROJECTS SECTION **/
 .project-section {
   display: flex;
-  gap: 30px;
+  margin-bottom: 75px;
 }
 
 #projects-wrapper {
@@ -88,6 +97,8 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  border-radius: 100px;
+  background-color: var(--wave-bg);
 }
 
 .tech-stack-container {

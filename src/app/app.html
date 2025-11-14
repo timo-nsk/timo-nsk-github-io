@@ -2,7 +2,7 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#personal-info-section">That's me</a></li>
+        <li><a href="#personal-info-section" >That's me</a></li>
         <li><a href="#projects-section">My Projects</a></li>
         <li><a href="#tech-stack-section">Tech Stack</a></li>
         <li><a href="#contact-section">Contact</a></li>
@@ -10,6 +10,14 @@
     </nav>
   </header>
 </section>
+<svg class="wave" width="100%" height="220" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <path d="
+      M0 70
+      C 25 10, 45 150, 110 60
+      L100 100
+      L0 100
+      Z" />
+</svg>
 <main>
   <section id="welcome-section">
     <div id="welcome-container">
@@ -25,7 +33,7 @@
       </h3>
 
       <h3>
-        Dormagen, Germany
+        📍Dormagen, Germany
       </h3>
     </div>
   </section>
@@ -35,7 +43,7 @@
     </h3>
     <div id="personal-info-wrapper">
       <div id="foto-container">
-        <img id="personal-foto" class="img" ngSrc="1.jpg" alt="Foto von mir" height="700" width="700">
+        <img id="personal-foto" class="img" ngSrc="me.jpeg" alt="Foto von mir" height="700" width="700">
       </div>
       <div id="info-box-container">
         <p>My name is Timo Neske. I am a computer science student at the Heinrich Heine Universität in Düsseldorf.</p>
@@ -59,17 +67,17 @@
       </section>
       <section class="project-section reverseable">
         <div class="project-screen-container">
-          <img id="mediaverse-screen" class="img" ngSrc="mediaverse.png" alt="Screenshot von Projekt Mediaverse" height="400" width="650">
+          <img id="dbd-ml-screen" class="img" ngSrc="dbd-ml.jpg" alt="Stock-Image Screenshot für Projekt dbd-ml" height="400" width="650">
         </div>
         <div class="project-info-container">
-          <h4><span class="secondary-highlight">Mediaverse</span></h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          <h4><span class="secondary-highlight">dbd-ml</span></h4>
+          <p>This is a machine learning project that uses a CNN for multi-class regression (134 classes). It extracts specific sections of a screenshot and classifies them for further data analysis. Written in Python and using Keras/TensorFlow.</p>
         </div>
       </section>
       <section class="project-section">
         <div class="project-info-container">
           <h4><span class="secondary-highlight">MathTrainer</span></h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          <p>I like math, and I think it's important to still be able to do basic calculations in your head without relying on a calculator. But I did not like the available solutions online, that's why I created this web application—to provide easy and fast access to training sessions.</p>
         </div>
         <div class="project-screen-container ">
           <img id="mathtrain-screen-1" class="img" ngSrc="mathtrain-1.png" alt="Screenshot 1 von Projekt Mathtrain" height="400" width="650">
@@ -78,11 +86,11 @@
       </section>
       <section class="project-section reverseable">
         <div class="project-screen-container">
-          <img id="dbd-ml-screen" class="img" ngSrc="dbd-ml.jpg" alt="Stock-Image Screenshot für Projekt dbd-ml" height="400" width="650">
+          <img id="mediaverse-screen" class="img" ngSrc="mediaverse.png" alt="Screenshot von Projekt Mediaverse" height="400" width="650">
         </div>
         <div class="project-info-container">
-          <h4><span class="secondary-highlight">dbd-ml</span></h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          <h4><span class="secondary-highlight">Mediaverse</span></h4>
+          <p>I was tired of using multiple websites to track my media, so I created a simple web UI to organize everything according to my personal preferences. It's a basic CRUD application that uses inheritance in the backend with Spring Data JPA.</p>
         </div>
       </section>
     </div>
