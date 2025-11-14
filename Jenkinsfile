@@ -16,7 +16,6 @@ pipeline {
                 sh 'npm install'
                 sh 'npm install --save-dev @angular/cli'
                 sh 'npx ng build --output-path docs --base-href /timo-nsk-github-io/'
-'
             }
         }
 
