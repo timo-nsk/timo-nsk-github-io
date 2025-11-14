@@ -14,6 +14,7 @@ pipeline {
         stage('Build project') {
             steps {
                 sh 'npm install'
+                sh 'npm install --save-dev @angular/cli'
                 sh 'ng b --output-path docs --base-href /timo-nsk-github-io/'
             }
         }
