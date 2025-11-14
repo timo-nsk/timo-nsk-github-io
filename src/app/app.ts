@@ -5,6 +5,9 @@ import {NgOptimizedImage} from '@angular/common';
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
+  imports: [
+    NgOptimizedImage
+  ],
   styleUrl: './app.css'
 })
 export class App {
