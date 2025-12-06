@@ -4,7 +4,7 @@
 
 /** HEADER SECTION **/
 #header-section {
-  padding: 60px;
+  padding: 30px;
   background-color: var(--wave-bg);
 }
 
@@ -19,7 +19,7 @@
 
 /** WELCOME SECTION **/
 #welcome-section {
-  height: 60vh;
+  height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,8 +33,6 @@
 #personal-info-section {
   display: flex;
   flex-direction: column;
-  height: var(--view-height);
-  overflow: hidden;
 }
 
 #personal-info-wrapper {
@@ -64,8 +62,6 @@
 .project-section {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 75px;
-  margin-bottom: 75px;
 }
 
 .project-header-link {
@@ -99,7 +95,6 @@
 
 /** TECH STACK SECTION **/
 #tech-stack-section {
-  margin-top: 100px;
 }
 
 #tech-stack-wrapper {
@@ -149,6 +144,12 @@ margin-top: 30px;
 }
 
 /** OTHER **/
+.section-header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
 .border-r {
   border: 1px solid red;
   padding: 1px;
@@ -186,6 +187,8 @@ hr {
   height: 5px;
   background-color: var(--old-rose);
   border: none;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 address {
@@ -206,10 +209,21 @@ footer {
   width: 50px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 @media  (max-width: 800px) {
   #personal-info-wrapper {
     justify-content: center;
     align-items: center;
+  }
+
+  #info-box-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
   }
 
   .project-section,
@@ -223,6 +237,10 @@ footer {
   #foto-container,
   #info-box-container {
     width: 100%;
+  }
+
+  #projects-wrapper {
+    gap: 80px;
   }
 
   .reverseable {

@@ -8,7 +8,7 @@ import {NgOptimizedImage} from '@angular/common';
   imports: [
     NgOptimizedImage
   ],
-  styleUrl: './app.css'
+  styleUrls: ['./app.css', 'border.css']
 })
 export class App {
   protected readonly title = signal('timo-nsk-github-io');
